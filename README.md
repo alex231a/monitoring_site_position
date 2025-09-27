@@ -2,7 +2,7 @@ To use this code you should:
 1. Create file position_report.xlsx. Structure of this file should be the same as in example.
 2. Login on https://app.dataforseo.com/api-dashboard and get credentials.
 3. Create file .secure and add credentials like in example:
-    headers = {'Authorization': 'Basic <!!!Here should be your token!!!>', 'Content-Type': 'application/json'}
+    AUTHORIZATION=Basic <!!!Here should be your token!!!>
 4. Add email credentials in file .secure:
     sender_email=example@gmail.com
     app_password=password_from_app_gmail.com

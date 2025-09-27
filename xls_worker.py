@@ -98,7 +98,12 @@ class PositionExtractor:
 if __name__ == '__main__':
     url = "https://api.dataforseo.com/v3/serp/google/organic/live/advanced"
     filename = 'position_report.xlsx'
-    headers = os.getenv('headers')
+    auth = os.getenv("AUTHORIZATION")
+
+    headers = {
+        "Authorization": auth,
+        "Content-Type": "application/json"
+    }
 
     job_parse = PositionExtractor(file_name=filename, url_service=url,
                                   headers=headers)
