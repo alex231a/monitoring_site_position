@@ -139,7 +139,7 @@ cython_debug/
 
 # VS Code
 .vscode/
-.idea
+.idea/
 
 
 # Custom secure files
